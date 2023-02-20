@@ -1,0 +1,98 @@
+[
+    {
+        "bio": 98,
+        "class": 1,
+        "eng": 87,
+        "kor": 67,
+        "mat": 90,
+        "name": "adam"
+    },
+    {
+        "bio": 98,
+        "class": 1,
+        "eng": 45,
+        "kor": 45,
+        "mat": 56,
+        "name": "andrew"
+    },
+    {
+        "bio": 88,
+        "class": 1,
+        "eng": 59,
+        "kor": 95.4,
+        "mat": 96,
+        "name": "ben"
+    },
+    {
+        "bio": 98,
+        "class": 1,
+        "eng": 94,
+        "kor": 65,
+        "mat": 89,
+        "name": "clark"
+    },
+    {
+        "bio": 98,
+        "class": 1,
+        "eng": 65,
+        "kor": 45,
+        "mat": 78.5,
+        "name": "dan"
+    },
+    {
+        "bio": 89,
+        "class": 1,
+        "eng": 76,
+        "kor": 78,
+        "mat": 98,
+        "name": "noel"
+    },
+    {
+        "bio": 56.5,
+        "class": 2,
+        "eng": 67,
+        "kor": 87,
+        "mat": 65,
+        "name": "paul"
+    },
+    {
+        "bio": 78,
+        "class": 2,
+        "eng": 98.5,
+        "kor": 89,
+        "mat": 78,
+        "name": "walter"
+    },
+    {
+        "bio": 65,
+        "class": 2,
+        "eng": 78,
+        "kor": 100,
+        "mat": 56,
+        "name": "oscar"
+    },
+    {
+        "bio": 87,
+        "class": 2,
+        "eng": 89,
+        "kor": 99,
+        "mat": 87,
+        "name": "martin"
+    },
+    {
+        "bio": 54,
+        "class": 2,
+        "eng": 45,
+        "kor": 98,
+        "mat": 56,
+        "name": "hugh"
+    },
+    {
+        "bio": 78,
+        "class": 2,
+        "eng": 89,
+        "kor": 65,
+        "mat": 87,
+        "name": "henry"
+    }
+]

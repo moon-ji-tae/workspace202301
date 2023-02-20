@@ -1,0 +1,14 @@
+{
+	"animals": {
+		"animal": [
+			{
+				"name": "lion",
+				"lifespan": "13"
+			},
+			{
+				"name": "tiger",
+				"lifespan": "17"
+			}
+		]
+	}
+}

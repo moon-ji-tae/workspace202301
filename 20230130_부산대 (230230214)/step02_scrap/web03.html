@@ -1,0 +1,193 @@
+<!-- 
+    css
+     : cascading style sheet
+     : 디자인
+
+    적용방식 
+    1) 인라인 방식 
+        <태그 style="속성:값...">
+    2) head 방식 
+        <style>
+            선택자 {속성:값...}
+        </style>  
+    3) 외부 파일 방식 
+       *.css 
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 배우기1</title>
+    <!-- css 영역 지정  -->
+    <style>
+        /* 태그선택자
+            html태그명 {속성:값;...}
+        */
+        /* h1 디자인 - 중앙정렬, 글자색상 */
+        h1 { text-align: center;
+             color:darkgreen;}
+
+        /* h2 디자인 - 밑줄, 글자색상 */
+        h2 { text-decoration: underline;
+             color:hotpink;}     
+             
+        /* 클래스선택자 = 도트선택자
+           1) 선언
+            .클래스명 {속성:값;...}
+           2) html 태그 적용
+            <태그 class="클래스명">
+        */   
+        /* font-size 
+            글자크기 : 키워드 small|large, 
+              수치+단위(px, em, pt)
+        */
+        .a { font-size: large; color: brown;}
+        .b { font-size: 16px; color: darkcyan;}
+        .c { font-size: 2em; color: darkgreen;}        
+
+        /* 아이디선택자 = 샵선택자
+           1) 선언
+            #아이디명 {속성:값;...}
+           2) html 태그 적용
+            <태그 id="아이디명">
+        */ 
+        /* 가로크기, 테두리, 배경색상 */    
+        #box1 {
+            width: 300px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            background-color: lightslategray;
+        }
+
+        /* 후손 선택자
+           선언
+             선택자1 선택자2 ... {속성:값;...}
+        */ 
+        /* #box2 안의 모든 li 태그  
+            밑줄 적용
+        */
+        #box2 li {
+            text-decoration: underline;
+        }
+        /* #box2 안의 ol 태그안의 li 태그  
+            진하게 표시 font-weight
+        */
+        #box2 ol li {
+            font-weight: bold;
+        }
+
+        /* 자손 선택자
+           선언
+             선택자1 > 선택자2 ... {속성:값;...}
+        */ 
+        /* #box1 안의 p 태그안의 b 태그안의 span태그
+            배경색상, 글자색상, 글자크기
+        */
+        #box1 > p > b > span {
+            background-color: black;
+            color: white;
+        }
+        /* #box1 안의 모든 span태그
+            글자크기 
+        */
+        #box1 span {
+            font-size: 2em;
+        }
+
+        /* 속성 선택자
+           선언
+             선택자[속성=값] {속성:값;...}
+        */ 
+        /* input 태그의 type 속성값이 text 
+            배경색상 
+        */
+        input[type=text] {background-color: lightsalmon;}
+        /* input 태그의 type 속성값이 password 
+            배경색상 
+        */
+        input[type=password] {background-color: lightgray;}
+
+        /* 구조 선택자 = 순서 선택자
+           선언
+             선택자:first-child {속성:값;...}
+             선택자:last-child {속성:값;...}
+             선택자:nth-child(n|계산식) {속성:값;...}
+        */ 
+        /* .box3 안의 ul 안의 첫번째 li => 글자색상  */
+        .box3 > ul > li:first-child { 
+            color:crimson;
+        }
+        /* .box3 안의 ul 안의 마지막 li => 글자색상  */
+        .box3 > ul > li:last-child { 
+            color:blue;
+        }
+        /* .box3 안의 ul 안의 3번째 li => 글자색상  */
+                .box3 > ul > li:nth-child(3) { 
+            color:chocolate;
+        }
+        /* .box3 안의 ul 안의 2,4번째 li => 글자색상, 글자크기  */
+                .box3 > ul > li:nth-child(2n) { 
+            color:darkmagenta;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 배우기1</h1>
+    <hr>
+    <!-- 선언된 아이디 디자인 적용 -->
+    <div id="box1">
+        <h2>박스1</h2>
+        <p>
+            <span>행1</span>입니다. <br>
+            <b><span>행2</span></b>입니다. <br>
+            <b>행3</b>입니다. <br>
+        </p>
+    </div>
+    <div id="box2">
+        <h2>박스2</h2>
+        <!-- 선언된 클래스 디자인 적용 -->
+        <ul>
+            <li class="a">목록</li>
+            <li class="b">목록</li>
+            <li class="c">목록</li>
+        </ul>
+        <ol>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+        </ol>
+    </div>
+    <form action="">
+        <h3>성별</h3>
+        <p>
+            <label for="female">여자</label>
+            <input type="radio" name="gender" id="female">
+            <label for="male">남자</label>
+            <input type="radio" name="gender" id="male">
+        </p>
+        <h3>이름</h3>
+        <p><input type="text"></p>
+        <h3>패스워드</h3>
+        <p><input type="password"></p>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+    <hr>
+    <div class="box3">
+        <h2>박스3</h2>
+        <ul>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+        </ul>
+    </div>
+
+</body>
+</html>

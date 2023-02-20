@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> 순서 없는 목록 문단  li 이용</h2>
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+    <hr>
+    <h2> 순서 있는 목록 문단 ol 이용    </h2>
+    <ol>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt><b>여자 아이돌 그룹</b></dt>
+        <dd>트와이스</dd>
+        <dd>레드벨벳</dd>
+        <dt><b>남자 아이돌 그룹</b></dt>
+        <dd>방탄소년단</dd>
+        <dd>워너원</dd>
+        <dd>뉴이스트</dd>
+    </dl>
+    <hr>
+    <h2>웹상에 있는 이미지 삽입하기  *.png  *.jpg *. gif</h2>
+    <div>
+        <!-- 구글 사이트에서 로고부분을 드래그하고 
+        우측 버튼 클릭 이미지 주소 복사 -->
+        <img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
+         alt="Googl log" width=" 200" height=" 100">
+        <br>
+        <!-- daum log -->
+        <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="Daum log">
+        <!-- 로컬 이미지 주소 이용 -->
+        <img src="image\meju.jpg" alt="메주" width = "100">   <br>
+
+        <img src="image\python-log.png" alt="python-log"> <br>
+        <!-- 상대 경로 image\python-log.png -->
+        <!-- C:\workspace202301\step01_python\image\python-log.png -->
+        <img src="C:workspace202301\step01_python\image\python-log.png" alt="파이썬 로고">
+    </div>
+    
+    <p>
+        <a href="https://www.google.com"> 구글 사이트로 이동하기</a>
+    </p>
+     
+    <p>
+        <a href="https://www.google.com" target="_blank" title="클릭시 구글로 이동">구글 사이트로 이동 New Tab</a>
+    </p>
+    <a href="https://www.python.org/" target="_blank">
+        <img src="image\python-log.png" alt="파이썬로고">
+    </a>
+    <!-- Table Tag -->
+    <!-- td : 일반 데이타 셀
+        th : 제목셀, 진하게, 중앙정렬
+        table 속성 : border, align, cellpadding, cellspacing 
+        td, th 속성 : colspan, rowspan  -->
+    <table border="2" align="center" 
+           width = "100"
+           cellpadding = "10" 
+           cellspacing ="0">
+       <th>tabkle head</th>       
+        <th>khjbdfvbhd</th>
+        <th> 33</th>
+        <th> 44</th>
+       
+        <tr>
+            <td> 1-1 </td>
+            <td> 1-2 </td>
+            <td>1-3</td>
+            <!-- 셀로 세로 합치기 -->
+            <td rowspan="2" align="center"><b> 1-4</b></td>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+        </tr>
+        <tr>
+            <!-- 셀 가로 합치기 -->
+
+            <td colspan="2" align="center"><i>3-1</i></td>
+            <td> 3-3</td>
+            <td>hzxnmcbvmnbvnc</td>
+        </tr>
+        <th> sdkhjbsdbhsf</th>
+        <th>dksjbshdj</th>
+        <th>sum</th> 
+        <th> avg </th>      
+
+    </table>
+
+    <!-- form Tag -->
+     <hr>
+     <h2> Form 1</h2>
+     <form action="#">  
+        <!-- for 값과 ID 값은 동일하게 지정 -->
+        <p>
+            <label for="UserID">아이디</label>
+            <input type="text" name="" id="UserID">
+        </p> 
+        <p>   
+            <label for="UserPWD">암호</label>
+            <input type="password" name="" id="UserPWD">
+        </p>
+
+     </form>
+<hr>
+<!-- radio and check box -->
+<h2> 성별 </h2>
+<p>
+    <label for="male"> 남자</label>
+    <input type="radio" name="gender" id="male">
+    <br>
+    <label for="female">여자</label>
+    <input type="radio" name="gender" id="female">
+</p>
+<h2>취미</h2>
+<p>
+    <label >테니스<input type="checkbox" name="" id=""></label>
+    <label >영화감상<input type="checkbox" name="" id=""></label>
+    <label >노래<input type="checkbox" name="" id=""></label>
+    <label >달리기<input type="checkbox" name="" id=""></label>
+</p>
+<hr>
+<h2>Form Tag</h2>
+<form action=""></form>
+    <p>한줄글상자 <input type="text" name="" id=""> </p>
+    <p>암호글상자 <input type="password" name="" id=""></p>
+    <p>이메일 글상자 <input type="email" name="" id=""></p>
+    <p>전송버튼 <button>전송</button></p>
+    <p>전송버튼 <input type="submit" value="전송"></p>
+    <p>
+        <label for="">아이디 : 
+        <input type="text" name="" id="">
+        </label>
+    </p>
+    <p><label for="">패스워드 : <input type="password" name="" id=""></label></p>
+
+
+    <hr>
+
+<h2>피드셋 과 레전드 그룹화하기</h2>
+<fieldset>
+    <legend>개인정보</legend>
+    <label for="userName1">이름</label>
+    <input type="text" name="" id="userName1">
+    <br>
+    <label for="userMail">메일주소</label>
+    <input type="email" name="" id="userMail">
+</fieldset>
+<h2>폼3</h2>
+<!--
+    fieldset : 폼요소그룹핑
+    legend : 필드셋안에서 제목 역할 
+    input:email 이메일입력상자. 이메일형식주소인지 판독 
+    input:submit 전송버튼 
+    input:reset 취소버튼. 초기화
+    button 전송버튼         
+-->
+    <form action="web01.html">
+    <fieldset>
+        <legend>로그인</legend>
+        <label for="email">이메일</label>
+        <input type="email" name="" id="email">
+        <input type="reset" value="취소">
+        <!-- 클릭시 form 태그의 action과 연동 -->
+    <h3>직업</h3>
+        <select name="" id="">
+            <option>선택하세요</option>
+            <option value="">회사원</option>
+            <option value="">공무원</option>
+            <option value="">간호원</option>
+            <option value="">학생</option>
+            <option value="">기타</option>
+        </select>  
+    </fieldset>
+    </form> 
+    <hr>
+    <h2> DIV usage</h2>
+    <div style="background-color: rgb(122, 88, 141);">
+        <h3>Box 1</h3>
+        <p>
+            Line 1 <br>
+            Line 2 <br>
+            Line 3 <br>
+
+        </p>
+    </div>
+    <div style="background-color: rgb(197, 95, 95);">
+        <h3> <span style="background-color: burlywood;">BOX</span> <span style="background-color: bisque; color: chartreuse;">2</span> </h3>
+        <p>
+            Line 3 <br>
+           <span style="background-color: rgb(138, 138, 194); color: #8b214d;">Line 4</span>  <br>
+            Line 5 <br>
+
+        </p>
+    </div>
+    <hr>
+    <header>
+        <h1>시멘틱 태그</h1>
+    </header>
+    <nav>
+        <ul> 
+        <ol>
+            <li><a href="#">Menu -1</a></li>
+            <li><a href="#">Menu -2</a></li>
+            <li><a href="#">Menu -3</a></li>
+        </ol> 
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>L i d s a</h1>
+            <p>
+                kjsdnvjkvbn <br>
+                 <i> <b> <span style="color: crimson;">bscssdcvsdghcvs </span>   </b></i>
+             </p>
+        </article>
+    </section>
+    <footer style="background-color: azure;">
+        <address> <h3>부산 광역시 사하구</h3> </address>
+    </footer>
+    </body>
+</html>

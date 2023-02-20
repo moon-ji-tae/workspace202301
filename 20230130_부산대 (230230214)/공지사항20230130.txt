@@ -1,0 +1,70 @@
+강사  신미영입니다. 
+coderecipe@naver.com 
+
+파이썬 
+웹 수집 
+장고 
+
+-- 설문지
+https://forms.gle/KaAbXsDeMH2LeVq76
+
+-- 공유자료실 
+http://naver.me/IMpPesoF
+비번없음
+
+-- 수업전용 오픈채팅창 
+https://open.kakao.com/o/gqtqhx1e
+검색어 : 202301 부산대 AI
+참여코드 : 2023
+
+--  수업 셋팅 
+
+1) 작업폴더 생성 
+영문과 숫자 조합(한글안됨) 
+예)  workspace202301
+
+2) 수업자료는 1)의 작업폴더안에 별도 셋팅 
+예)  C:\workspace202301\step01_python
+
+3) 아나콘다 설치 확인 
+아나콘다가 없다면 다운로드 후 설치 진행 
+
+-- 작업 환경 설정 --
+A) 크롬다운로드 설치 확인 
+    크롬 웹브라우저 기본 브라우저로 설정 
+
+B) 아나콘다 다운로드 및 설치 
+  - 작업 컴퓨터에 맞추어서 다운로드 : 
+    https://www.anaconda.com/products/individual#download-section
+    예시) Anaconda3-2022.10-Windows-x86_64.exe
+
+  - 다운로드 받은 아나콘다 설치 파일 마우스 우측
+    관리자 권한으로 실행(주의사항1)
+  - 설치시 자동패스 (주의사항2 - Add to Path ~ 옵션 꼭 선택)
+  - *** 만약 아나콘다 설치시 자동 패스 설정을 하시 못한 경우에는
+    재설치를 권장하나 재설치를 하고 싶지 않다면 구글에서 'Anaconda 환경변수 설정'으로 검색후
+    진행
+
+
+
+4) 쥬피터노트북 시작폴더 셋팅 
+
+C:\workspace202301
+
+a)  아나콘다 설치 폴더 확인 
+
+예시1) C:\ProgramData\Anaconda3
+예시2) C:\사용자\~\Anaconda3
+
+C:\ProgramData\Anaconda3\Scripts\jupyter-notebook.exe
+
+b) jupyter-notebook.exe 마우스 우측 버튼 클릭 후 
+[보내기]-[바탕화면에 바로가기 만들기] 
+
+c) 바탕화면에 생성된 아이콘을 마우스 우측 버튼 클릭 
+[속성] 클릭 
+
+d) 대화상자에서 
+[시작 위치] 경로를 쥬피터노트북 파일이 생성되는 위치로 설정 
+예) C:\workspace202301
+

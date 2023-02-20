@@ -1,0 +1,10 @@
+1. 파일 Oepn, Close 
+2. Access mode
+3. 파일 읽기 (read)
+4. with로 파일 읽기
+5. 파일 쓰기 (write)
+1. 파일 Oepn, Close 
+2. Access mode
+3. 파일 읽기 (read)
+4. with로 파일 읽기
+5. 파일 쓰기 (write)

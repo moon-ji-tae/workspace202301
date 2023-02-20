@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <!-- CSS Area -->
+    <style>
+        /* 태그 선택자
+           HTML Tag Name {속성 : 값; ...}
+        */
+        h1 {text-align: center;
+            color: blue; 
+           }
+        h2 {text-align: left;
+            text-decoration: underline;
+            color: blueviolet;
+           }
+        /* 클래스 선택자 = 도트선택자
+           1) 선언 
+           .클래스{속성 : 값 ;... }
+           2) html 태그 적용
+           <태그 class = "Name">
+        */   
+        .a {font-size: large;}
+        .b {font-size: small;}
+        .c {font-size: 32px;}
+        .d {font-size: 2em;}
+        /*#id 선택자*/
+        #h2Box1 {border: 4px black solid; width: 100px ;
+                 background-color: yellow; 
+                }
+        #divBox1 {border: 4px black solid; width:200px ;
+                 background-color: rgb(0, 255, 174); 
+                }
+        /* 후손 선택자
+         1) 선언
+            선택자1 선택자2 ...{속성 : 값 ...}
+        */
+        #Box2 ul li {text-decoration: underline;}
+        #Box2 ol > li {font-weight: bold;}
+        #Box3 p > b > span {background-color: black;
+                    color: yellow;
+                      }
+        #Box3 span {font-size: 2em ;}  
+        /* 속성 선택자 
+           선언 : 선택자[속성=값] {속성 : 값 ...}
+        */       
+        input[type=text] {background-color: rgb(194, 255, 80);} 
+        input[type=password] {background-color: darkred;} 
+        /* 구조 선택자
+           선언 
+             선택자 : first-child {속성:값 ...}
+                      last-child
+                      nth-child(n|계산식)
+        
+        */
+        .box3 > ul > li:first-child{color: burlywood;font-weight: 200;} 
+        .box3 > ul > li:last-child{color: darkmagenta;font-size: x-large;} 
+        .box3 > ul > li:nth-child(3){background-color: cornflowerblue; }
+        .box3 > ul > li:nth-child(2n){font-size: smaller; color: greenyellow;}
+    </style>
+</head>
+<body>
+    <h1>Learn CSS</h1>
+    <h2>CSS: Cascading Style Sheets</h2>
+    <hr>
+    <div id="divBox1">
+        <h2>BOX 1</h2>
+        <p class="a">Class A</p>
+        <p class="b">Class B</p>
+        <p class="c">Class C 32px</p>
+        <p class="d">Class D 2em</p>
+        <p>
+            <ol>
+                <li>line A</li>
+                <li>line B</li>
+                <li>line C</li>
+                etc line1 <br>
+                etc line2 
+            </ol>
+        </p>
+    </div>
+    <div id = "Box2">
+        <h2 id="h2Box1">BOX 2</h2>
+        <p>
+            <ul>
+                <li class="c">line D</li>
+                <li>line E</li>
+                <li>line F</li>
+                etc line3 <br>
+                etc line4 
+            </ul>
+            <ol>
+                <li>line G</li>
+                <li>line H</li>
+                <li>line I</li>
+                 
+            </ol>
+        </p>
+    </div>
+    <div id = "Box3">
+        <p>
+            It s <span>Line 1</span> Line 1 <br>
+            It s <b><span>Line 2</span></b> Line 2 <br>
+            It s <b> Line 3</b> <br>
+        </p>
+    </div>
+    <form action="">
+        <h3>Gender</h3>
+        <p>
+            <label for="fm">여자</label>
+            <input type="radio" name="gend" id="fm">
+            <label for="m">남자</label>
+            <input type="radio" name="gend" id="m">
+        </p>
+        <h3>Name</h3>
+        <p><input type="text" name="" id=""></p>
+        <h3>Password</h3>
+        <p><input type="password" name="" id=""></p>
+        <input type="submit" value="Send">
+        <input type="reset" value="Cancel">
+    </form>
+    <div class="box3">
+        <h3> BOX 3</h3>
+        <ul>    
+            <li> contens1</li>
+            <li> contens2</li>
+            <li> contens3</li>
+            <li> contens4</li>
+            <li> contens5</li>
+        </ul>
+    </div>
+</body>
+</html> 
